@@ -8,6 +8,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { getMarketplace, getTopMarketplace } from "@/utils/Home";
 import { saveHighestVote, saveMarketplace } from "@/store/reducers/marketplace";
+import { Loader } from "../common/loader/Loader";
+import LoadingScreen from "../common/loadingScreen";
 
 const MarketPlace = () => {
   const dispatch = useDispatch();
@@ -41,7 +43,7 @@ const MarketPlace = () => {
     <>
       <div className="container lg:px-12 mx-auto px-4">
         {loading ? (
-          "Loading..."
+          <LoadingScreen />
         ) : (
           <div className="w-full flex justify-center">
             <div className="w-full md:max-w-[80%] lg:max-w-[70%]">
