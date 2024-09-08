@@ -57,7 +57,7 @@ export const SearchBar = ({ cloneMarketData }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeTab]);
   return (
-    <div className="flex flex-wrap lg:flex-nowrap">
+    <div className="w-full flex flex-wrap lg:flex-nowrap">
       <div className={styles.wrapper}>
         <ul className={styles.flexx}>
           <li className="mr-2">

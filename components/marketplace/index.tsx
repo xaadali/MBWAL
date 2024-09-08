@@ -41,7 +41,7 @@ const MarketPlace = () => {
   }, [reload]);
   return (
     <>
-      <div className="container lg:px-12 mx-auto px-4">
+      <div className="container lg:px-12 px-4 max-w-none">
         {loading ? (
           <LoadingScreen />
         ) : (

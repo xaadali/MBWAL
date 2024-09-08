@@ -2,7 +2,7 @@
   @apply mt-4 text-sm text-center mb-12 py-3 rounded-t-lg w-full flex-wrap flex justify-between  px-3 bg-textDarkColor;
 
   .flexx {
-    @apply flex flex-wrap;
+    @apply w-full flex flex-wrap;
 
     .tab {
       @apply inline-block cursor-pointer mt-2 rounded-t-lg gap-x-8 ml-5 border-transparent;
@@ -10,12 +10,6 @@
   }
   .filterInput1 {
     @apply bg-[#FFFFFF] dark:bg-[#1C2024] rounded-lg ml-4 h-9  text-sm block xl:w-[350px] w-[250px] lg:w-[300px] pl-10 pr-16 p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white outline-none  focus:border-textDarkColor focus:border-2;
-  }
-  .imgPossition {
-    @apply flex absolute inset-y-0 left-3 bottom-0  items-center pl-3 pointer-events-none;
-  }
-  .textPossition {
-    @apply flex absolute inset-y-0 right-3 text-[#D26BF5] bottom-0 items-center pl-3 pointer-events-none;
   }
 }
 .active {
