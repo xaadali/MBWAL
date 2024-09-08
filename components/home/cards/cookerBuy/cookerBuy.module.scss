@@ -1,0 +1,25 @@
+.cookerBuy{
+    @apply w-full flex flex-col items-center lg:flex-row lg:items-start py-4 mt-10;
+    .leftSection{
+       @apply w-full xl:w-2/5 h-full flex justify-center lg:justify-start items-center order-2 lg:order-1;
+    }
+    .rightSection{
+        @apply w-full xl:w-3/5  box-border order-1 lg:order-2;
+        .textSection{
+            @apply w-full;
+            .headingText{
+                @apply text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-semibold text-black leading-tight;
+                span{
+                    @apply text-white;
+                }
+            }
+            .listItemText{
+                @apply text-lg lg:text-[14px] xl:text-lg text-[#4D4D4D] leading-7 mt-4 max-w-[555px];
+            }
+            button{
+                @apply mt-8 px-5 py-2 rounded-sm text-lg text-[#C4B34F] font-semibold bg-lightColor;
+            }
+        }
+        
+    }
+}

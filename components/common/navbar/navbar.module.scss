@@ -1,0 +1,96 @@
+.wrapper {
+  @apply h-auto min-h-[120px] w-full flex justify-center shadow-md;
+
+  .container {
+    @apply w-full h-full max-w-[1900px] lg:gap-x-[30px] xl:gap-x-[130px] flex justify-between items-center;
+
+    .logo {
+      @apply cursor-pointer;
+
+      .icon {
+        @apply xm:w-[75px] sm:w-[85px] md:w-[80px] xl:w-[90px]  3xl:min-w-[94px];
+      }
+    }
+
+    .linkWrapper {
+      @apply justify-between hidden lg:flex;
+
+      .links {
+        @apply hidden lg:flex lg:gap-x-[30px] xl:gap-x-[40px] items-center cursor-pointer justify-between;
+
+        .active {
+          @apply text-textDarkColor text-base;
+
+          .link {
+            @apply relative flex flex-col text-textDarkColor items-center;
+
+            .text {
+              @apply flex items-center gap-x-[3px] text-base whitespace-nowrap;
+            }
+
+            .activeBar {
+              @apply h-[3px] rounded-[4.5px] absolute bottom-[-50px];
+              width: calc(100% + 20px);
+              background: linear-gradient(to right, white, #3d83df) !important;
+            }
+          }
+        }
+
+        .inactive {
+          @apply text-textColor font-medium text-base;
+
+          .link {
+            @apply flex flex-col items-center relative;
+
+            .text {
+              @apply flex items-center gap-x-[3px] text-base whitespace-nowrap hover:text-textDarkColor;
+            }
+
+          }
+        }
+      }
+    }
+
+    .LanguageAndLogin {
+      @apply justify-between items-center gap-x-4 lg:gap-x-5 flex;
+      .active {
+        @apply text-textDarkColor text-2xl;
+
+        .link {
+          @apply relative flex flex-col text-textDarkColor items-center;
+
+          .text {
+            @apply flex items-center gap-x-[3px] text-2xl whitespace-nowrap;
+          }
+
+          .activeBar {
+            @apply h-[3px] rounded-[4.5px] absolute bottom-[-50px];
+            width: calc(100% + 20px);
+            background: linear-gradient(to right, white, #3d83df) !important;
+          }
+        }
+      }
+
+      .inactive {
+        @apply text-textColor font-medium text-2xl;
+
+        .link {
+          @apply flex flex-col items-center relative;
+
+          .text {
+            @apply flex items-center gap-x-[3px] text-2xl whitespace-nowrap hover:text-textDarkColor;
+          }
+
+        }
+      }
+      .menuIcon {
+        @apply lg:hidden ml-auto text-textDarkColor cursor-pointer text-3xl;
+      }
+
+      button {
+        @apply flex justify-center items-center relative text-[14px] font-semibold h-[40px] w-[138px] rounded-md  bg-textDarkColor text-white;
+
+      }
+    }
+  }
+}

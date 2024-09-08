@@ -1,0 +1,59 @@
+.seeMore {
+  @apply text-[16px] w-[90%] font-normal  text-black mt-5 text-ellipsis overflow-hidden;
+}
+
+.seeLess {
+  @apply text-[16px] break-words font-normal text-black mt-5;
+}
+.wrapper {
+  @apply w-full flex flex-col items-center mb-32 lg:mb-52;
+  .heading {
+    @apply w-full text-center text-3xl lg:text-5xl uppercase font-bold p-6;
+  }
+  .subText {
+    @apply w-full text-center px-10;
+  }
+  .faqsWrapper {
+    @apply w-full mt-10 lg:mt-16;
+    .accordion {
+      @apply border-transparent;
+      .faqItem {
+        @apply w-full mb-8 rounded-lg  border-opacity-40;
+        .question {
+          @apply w-full p-2 lg:pr-4 bg-red-600 text-black rounded-3xl text-[25px] lg:text-[32px] font-medium flex lg:flex-nowrap flex-wrap justify-between gap-3;
+          .button {
+            @apply p-3 py-2 mx-2 rounded-lg mt-1 text-sm text-textDarkColor font-normal bg-white;
+           
+          }
+          .buttonCount {
+            @apply px-2 pt-2 rounded-lg text-sm mt-1 text-textDarkColor font-normal bg-white;
+          
+          }
+          .socialbutton {
+            @apply rounded-sm mt-1 p-2 text-sm mx-0.5 text-textDarkColor font-normal bg-white;
+          }
+          .social {
+            @apply flex justify-center items-center bg-white p-2 mt-1 ml-2 rounded-md text-[13px] whitespace-nowrap text-white font-normal;
+            img {
+              @apply w-4;
+              filter: invert(50%);
+            }
+          }
+          .icon {
+            @apply w-full h-[300px] lg:max-w-[300px] rounded-lg lg:min-w-[300px] text-white;
+          }
+          .inactive {
+            @apply text-black;
+          }
+          .active {
+            @apply text-black;
+          }
+        }
+        .answer {
+          @apply w-full p-4 text-sm bg-slate-700 rounded-md;
+        }
+      }
+    }
+  }
+}
+

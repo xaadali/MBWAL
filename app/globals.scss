@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body{
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+ 
+}
+
+/*scrollBar*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3266ba ;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3249ba ;
+}
+/*scrollBar*/
+
+.custom-class {
+  @media screen and (max-width: 359px) {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  @media screen and (min-width: 360px) {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 0 43px;
+    box-sizing: border-box;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    padding: 0 142px;
+    box-sizing: border-box;
+  }
+  @media screen and (min-width: 1440px) and (max-width: 1919px) {
+    padding: 0 97px;
+    box-sizing: border-box;
+  }
+  @media screen and (min-width: 1920px) {
+    padding: 0 336px;
+    box-sizing: border-box;
+  }
+}
+

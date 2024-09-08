@@ -1,0 +1,138 @@
+.bg {
+  @apply bg-[#EDEBEF] m-0 min-w-[1000px] w-full;
+  p {
+    @apply text-center text-[#D26BF5] text-[18px] font-medium;
+  }
+  .headingset {
+    @apply px-10;
+    p {
+      @apply text-start text-[#D26BF5] text-[18px] font-medium;
+    }
+    .price {
+      text-align: center !important;
+    }
+  }
+}
+.wrapper {
+  @apply min-w-[1000px] w-full flex flex-col rounded-b-lg  items-center bg-[#EDEBEF] text-black pb-5;
+
+  .faqsWrapper {
+    @apply px-10 w-full;
+    .accordion {
+      @apply border-transparent;
+      .faqItem {
+        @apply w-full overflow-auto border-opacity-40 py-2;
+        .question {
+          @apply bg-transparent min-w-[800px] border-b border-[#707070] w-full gap-3;
+          .icon {
+            @apply text-sm text-green-500;
+          }
+          .inactive {
+            @apply text-black;
+          }
+          .active {
+            @apply text-black my-auto w-96;
+          }
+        }
+        .answer {
+          @apply w-full p-4 text-sm min-w-[800px] rounded-md bg-slate-700;
+        }
+      }
+    }
+  }
+}
+.tablehead {
+  @apply text-[18px] text-[#D26BF5] font-medium;
+  text-align: start !important;
+}
+:global(.dark) .wrapper {
+  background-color: #1c2024;
+  color: white;
+}
+:global(.dark) .bg {
+  background-color: #1c2024;
+  color: white;
+}
+
+:global(.dark) .active {
+  color: white !important;
+}
+:global(.dark) .inactive {
+  color: white !important;
+}
+
+// Mobile Accordian styles start here
+
+.mobileAccordianWrapper{
+  @apply bg-[#EDEBEF] w-full flex flex-col items-center rounded-b-lg;
+  .mobileHeading{
+    @apply w-full flex justify-center;
+    .headingText{
+      @apply text-[#D26BF5] text-center text-sm md:text-lg font-semibold max-w-[200px] md:max-w-none;
+    }
+  }
+  .packageWrapper{
+    @apply w-full;
+    .packageContainer{
+      @apply w-full flex flex-wrap justify-start gap-y-4 p-3 border-[#707070] border-b;
+      .ItemNamepackageDescription{
+        @apply w-[25%] min-w-[170px]  flex flex-col items-center;
+        .packageHeading{
+          @apply w-full  text-[#D26BF5] text-lg;
+        }
+        .packageDetail{
+          @apply w-full text-sm text-black;
+        }
+      }
+      .PlatformpackageDescription{
+        @apply w-[15%] min-w-[50px]  flex flex-col items-start;
+        .packageHeading{
+          @apply w-full text-left text-[#D26BF5] text-lg;
+        }
+        .packageDetail{
+          @apply w-full flex text-sm text-black;
+        }
+      }
+      .DetailspackageDescription{
+        @apply w-full max-w-[300px]  flex flex-col items-center;
+        .packageHeading{
+          @apply w-full text-lg text-[#D26BF5] text-left;
+        }
+        .packageDetail{
+          @apply w-full text-sm text-black text-left;
+        }
+      }
+      .PricepackageDescription{
+        @apply w-[50%] min-w-[300px] flex gap-x-1 items-center justify-start;
+        .packageHeading{
+          @apply w-full text-lg text-[#D26BF5] text-left;
+        }
+        .packageDetail{
+          @apply w-full text-sm text-black text-left;
+        }
+      }
+    }
+  }
+  .mobileSeeLess{
+    @apply w-full rounded-b-lg flex justify-center;
+      background-image: linear-gradient(
+              to right,
+              #ce6cf7,
+              #5860cb
+            ) !important;
+            button{
+              @apply w-full flex justify-center items-center
+            }
+  }
+}
+
+
+
+
+
+:global(.dark) .mobileAccordianWrapper{
+  background-color: #1c2024;
+}
+:global(.dark) .packageDetail{
+   color: white !important;
+}

@@ -1,0 +1,27 @@
+.container{
+    @apply w-full bg-primary min-h-[600px] lg:min-h-[400px];
+    .wrapper{
+    @apply w-full flex flex-col items-center lg:flex-row;
+    .leftSection{
+        @apply w-full xl:w-2/4 py-14 box-border;
+        .textSection{
+            @apply w-full;
+            .headingText{
+                @apply text-6xl lg:text-4xl xl:text-6xl font-semibold text-[#263238] leading-tight;
+                span{
+                    @apply text-white;
+                }
+            }
+            .listItemText{
+                @apply text-lg text-white leading-10 mb-2;
+            }
+            a{
+                @apply mt-12 px-5 py-2 rounded-sm text-lg text-black font-semibold bg-lightColor;
+            }
+        }
+    }
+    .rightSection{
+        @apply w-full xl:w-2/4 flex justify-center;
+    }
+}
+}

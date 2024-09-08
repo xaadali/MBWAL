@@ -1,0 +1,53 @@
+.container {
+  @apply w-full flex flex-col box-border py-20  items-center;
+  // bg-gradient-to-bl from-[#C4B34F] to-[#dcd39831];
+ 
+  background-image: linear-gradient(to bottom left, #e4db94b6, #dad4a931), url("/ethereum.png");
+  background-repeat: no-repeat;
+  background-position: 100% 00%;
+  .wrapper {
+    @apply w-full flex-col flex p-6  2xl:py-6 lg:py-6;
+
+    .heading {
+      @apply w-full uppercase text-black font-bold;
+      font-size: 3.375rem;
+      p{
+        @apply text-primary;
+      }
+    }
+    .subText {
+      @apply w-full text-center px-10;
+    }
+    .faqsWrapper {
+      @apply w-full mt-10 lg:mt-8;
+      .accordion {
+        @apply border-transparent;
+        .faqItem {
+          @apply w-full border-2 border-textDarkColor rounded-md py-4 mb-3 px-2 box-border;
+          .question {
+            @apply bg-transparent w-full flex items-center 2xl:gap-14 lg:gap-12 sm:gap-10;
+            .iconBox {
+              @apply flex text-4xl text-primary font-bold;
+            }
+            .inactive {
+              @apply flex font-semibold text-2xl text-left; 
+              color: #28282e;
+            }
+            .active {
+              @apply flex font-semibold text-2xl text-left;
+              color: #28282e;
+            }
+          }
+          .answerDiv {
+            @apply bg-transparent w-full flex items-center 2xl:gap-14 lg:gap-12 sm:gap-5;
+          }
+          .answer {
+            @apply flex text-black font-normal items-start flex-col max-w-[805px] pl-4;
+            font-size: 1.125rem;
+            word-break: break-all;
+          }
+        }
+      }
+    }
+  }
+}

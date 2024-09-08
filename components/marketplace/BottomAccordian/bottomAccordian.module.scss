@@ -1,0 +1,99 @@
+.wrapper {
+  @apply w-full flex flex-col items-center mb-32 lg:mb-52;
+  .heading {
+    @apply w-full text-center text-3xl lg:text-5xl uppercase font-bold p-6;
+  }
+  .subText {
+    @apply w-full text-center px-10;
+  }
+  .faqsWrapper {
+    @apply w-full mt-10 lg:mt-16;
+    .accordion {
+      @apply border-transparent;
+      .faqItem {
+        @apply w-full mb-8 rounded-t-lg  border-opacity-40;
+        .question {
+          @apply w-full lg:p-2 lg:pr-4 bg-textDarkColor text-black rounded-lg text-[25px] lg:text-[32px] font-medium flex lg:flex-nowrap flex-wrap justify-between gap-3;
+          .button {
+            @apply p-3 py-2 mr-2 rounded-lg mt-1 text-sm text-textDarkColor font-normal bg-white;
+            
+          }
+          .buttonCount {
+            @apply px-2 py-2 rounded-lg text-sm mt-1 text-textDarkColor font-normal bg-white;
+         
+          }
+          .socialbutton {
+            @apply rounded-lg mt-1 p-2 text-sm mx-0.5 text-textDarkColor font-normal bg-white;
+          }
+          .social {
+            @apply bg-white w-[35px] h-[35px] flex justify-center items-center mt-1  rounded-md text-[13px] whitespace-nowrap text-white font-normal;
+            img {
+              @apply w-4;
+              filter: invert(50%);
+            }
+          }
+          .socialIcon {
+            @apply items-center h-[38px] flex gap-x-2  px-2 mt-0 lg:mt-2 rounded-md text-[13px] whitespace-nowrap text-white font-normal;
+             background-image: linear-gradient(
+              to right,
+              #ce6cf7,
+              #5860cb
+            )
+          }
+          .icon {
+            @apply w-full h-[300px] lg:max-w-[300px] lg:min-w-[300px] text-white;
+          }
+          .inactive {
+            @apply text-black;
+          }
+          .active {
+            @apply text-black;
+          }
+        }
+        .answer {
+          @apply w-full p-4 text-sm bg-slate-700 rounded-md;
+        }
+      }
+      .faqItemIsExpand {
+        @apply w-full mb-8 rounded-t-lg  border-opacity-40;
+        .question {
+          @apply w-full p-2 lg:pr-4 bg-textDarkColor text-black rounded-t-lg text-[25px] lg:text-[32px] font-medium flex lg:flex-nowrap flex-wrap justify-between gap-3;
+          .button {
+            @apply p-3 py-2 mr-2 rounded-lg mt-1 text-sm text-textDarkColor font-normal bg-white;
+           
+          }
+          .buttonCount {
+            @apply px-2 py-2 rounded-lg text-sm mt-1 text-textDarkColor font-normal bg-white;
+          }
+          .socialbutton {
+            @apply  rounded-lg mt-1 p-2 text-sm mx-0.5 text-textDarkColor font-normal bg-white;
+           
+          }
+          .social {
+            @apply bg-white w-[35px] h-[35px] flex justify-center items-center mt-1  rounded-md text-[13px] whitespace-nowrap text-white font-normal;
+            img {
+              @apply w-4;
+              filter: invert(50%);
+            }
+          }
+          .socialIcon {
+            @apply items-center h-[38px] flex gap-x-2 px-2 mt-0 lg:mt-2 rounded-md text-[13px] whitespace-nowrap text-textDarkColor font-normal bg-white;
+            
+          }
+          .icon {
+            @apply w-full h-[300px] lg:max-w-[300px] lg:min-w-[300px] text-white;
+          }
+          .inactive {
+            @apply text-black;
+          }
+          .active {
+            @apply text-black;
+          }
+        }
+        .answer {
+          @apply w-full p-4 text-sm bg-slate-700 rounded-md;
+        }
+      }
+    }
+  }
+}

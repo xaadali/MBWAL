@@ -1,0 +1,12 @@
+.cardsSection{
+    @apply w-full flex justify-center xl:justify-between flex-wrap gap-y-4 gap-x-4 xl:gap-x-0;
+    .card{
+        @apply px-2 box-border min-w-[299px] w-[299px] min-h-[291px] lg:min-w-[230px] lg:w-[230px] lg:min-h-[260px] xl:min-w-[300px] xl:w-[300px] xl:min-h-[291px] rounded-lg bg-primary border-[20px] border-[#f5f0bb] flex flex-col items-center justify-center;
+    .cardHeading{
+        @apply text-2xl lg:text-lg xl:text-2xl text-textColor font-bold leading-normal;
+    }
+    p{
+        @apply text-sm lg:text-xs xl:text-sm text-white text-center;
+    }
+    }
+}

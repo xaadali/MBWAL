@@ -1,0 +1,64 @@
+.walletInfoForDesktop{
+    @apply w-full hidden md:flex flex-col items-center py-4 mt-10;
+    .infoWrapper{
+        @apply w-full;
+        img{
+            @apply w-full h-full;
+        }
+    }
+    .walletInfo{
+        @apply w-full flex flex-row justify-between items-start mt-4;
+        .creationInfo{
+            @apply w-[33%]  flex flex-col items-center justify-center;
+            .title{
+                @apply text-white text-center text-3xl font-semibold;
+            }
+            .description{
+                @apply text-sm 3xl:text-lg max-w-[210px] text-center leading-7 mt-[30px];
+            }
+        }
+        .getSomeETH{
+            @apply w-[30%]  flex flex-col items-center justify-center;
+            .title{
+                @apply text-white text-center text-3xl font-semibold max-w-[170px];
+            }
+            .description{
+                @apply text-sm 3xl:text-lg max-w-[210px] text-center leading-7 mt-[30px];
+            }
+        }
+        .buyCookerAt{
+            @apply w-[30%]  flex flex-col items-center justify-center;
+            .title{
+                @apply text-white text-3xl font-semibold max-w-[250px] text-center;
+            }
+            .description{
+                @apply text-sm 3xl:text-lg max-w-[210px] text-center leading-7 mt-[30px];
+            }
+        }
+    }
+}
+.walletInfoMobileView{
+    @apply w-full md:hidden flex flex-col items-center py-4 mt-10;
+
+    .walletWrapper{
+        @apply w-full flex flex-col items-center;
+        .circleWithTextFirst{
+            @apply w-[164px] h-[164px] bg-white rounded-full border-[20px] border-primary flex justify-center items-center text-primary text-4xl font-bold;
+        }
+        .circleWithTextSecond{
+            @apply w-[164px] h-[164px] bg-white rounded-full border-[20px] border-[#E8E14F] flex justify-center items-center text-primary text-4xl font-bold;
+        }
+        .circleWithTextThird{
+            @apply w-[164px] h-[164px] bg-white rounded-full border-[20px] border-[#FFFBA0] flex justify-center items-center text-primary text-4xl font-bold;
+        }
+        .circleWithDescription{
+            @apply w-full  flex flex-col items-center justify-center mt-3;
+            .circleTitle{
+                @apply text-white text-center text-3xl font-semibold;
+            }
+            .circleDescription{
+                @apply text-sm 3xl:text-lg max-w-[210px] text-center leading-7 mt-[30px] mb-4;
+            }
+        }
+    }
+}
